@@ -1,0 +1,515 @@
+:root {
+    --cor-primaria: #1C2026;
+    --cor-seundaria: #F39200;
+    --yellow: #ffee00;
+    --orange-shadow: #975b00;
+    --white-color: #FFFFFF;
+    --gray-color: #ada9a9;
+    --titulo: 50px;
+    --subtitulo: 35px;
+    --texto: 20px;
+}
+
+/* SCROLL BAR  */
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #995f09bb;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-seundaria);
+    border-radius: 50px;
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* FIM SCROLL BAR  */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-primaria);
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 1.5s ease;
+}
+
+header.scrolled {
+    background-color: var(--cor-primaria);
+}
+
+.list_header {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+    color: var(--cor-seundaria);
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.menu_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.list_header {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.iten_header {
+    color: var(--cor-seundaria);
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.5s, text-shadow 0.5s;
+    text-decoration: none;
+}
+
+.iten_header:hover {
+    color: var(--white-color);
+    text-shadow: 0px 0px 20px var(--white-color);
+}
+
+/* FIM HEADER  */
+
+/* MAIN  */
+.section_main {
+    width: 100%;
+    height: 90vh;
+    margin-top: 20vh;
+}
+
+.container_main {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.apresentacao_main {
+    width: 40%;
+    margin-top: 4vh;
+    color: var(--white-color);
+    align-items: center;
+}
+
+.minha_ft_main {
+    width: 25vw;
+    min-height: 25vw;
+    object-fit: cover;
+    object-position: 60% 25%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 150px 0px var(--cor-seundaria);
+    transition: 2s;
+}
+
+.minha_ft_main:hover {
+    box-shadow: 0px 0px 150px 0px var(--white-color);
+}
+
+
+.texto_destaque {
+    color: var(--cor-seundaria);
+}
+
+.titulo_main {
+    font-size: var(--titulo);
+    margin-bottom: 15px;
+}
+
+.area_main {
+    color: var(--cor-seundaria);
+    font-size: var(--subtitulo);
+    margin-bottom: 10px;
+}
+
+.descricao_main {
+    font-size: var(--texto);
+}
+
+.links_main {
+    margin-top: 10vw;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.link_redes {
+    border: var(--cor-seundaria) 1px solid;
+    border-radius: 15px;
+    color: var(--white-color);
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    transition: 0.5s;
+}
+
+.link_redes:hover {
+    background-color: var(--cor-seundaria);
+    box-shadow: 0px 0px 20px 0px var(--cor-seundaria);
+}
+
+.linkedin {
+    margin-right: 12vw;
+    padding: 10px 50px;
+}
+
+.github {
+    padding: 10px 56px;
+}
+
+
+.logo {
+    width: 35px;
+    margin-right: 20px;
+}
+
+/* FIM MAIN  */
+
+/* ARROW  */
+.arrow-down {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.arrow-down-icon {
+    margin: 30px auto;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid var(--cor-seundaria);
+    border-left: 2px solid var(--cor-seundaria);
+    transform: rotate(225deg);
+    position: absolute;
+    transition: .5s;
+    animation: scrollAnimation 2s infinite ease-in-out;
+}
+
+
+@keyframes scrollAnimation {
+    0% {
+        margin-top: 20px;
+    }
+
+    50% {
+        margin-top: 30px;
+    }
+
+    100% {
+        margin-top: 20px;
+    }
+}
+
+.scroll-text {
+    color: var(--white-color);
+    text-shadow: 0px 0px 10px var(--white-color);
+}
+
+/* FIM ARROW  */
+
+/* INICIO FORMACAO */
+
+.section_formacao {
+    width: 100%;
+    height: 60vh;
+    margin-top: 20vh;
+}
+
+.container_formacao {
+    text-align: center;
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.titulo_formacao {
+    color: var(--cor-seundaria);
+    font-size: var(--titulo);
+    text-shadow: 0px 0px 5px var(--orange-shadow);
+    margin-bottom: 6vh;
+}
+
+.curso {
+    color: var(--white-color);
+    font-size: var(--texto);
+    margin-bottom: 2vh;
+}
+
+.ano_curso {
+    color: var(--white-color);
+    font-size: var(--texto);
+    margin-bottom: 3vh;
+}
+
+.faculdade {
+    color: var(--white-color);
+    font-size: 15px;
+    margin-bottom: 5vh;
+}
+
+.info_curso {
+    padding: 10px 56px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FIM FORMACAO */
+
+/* INICIO EXPERIENCIA */
+
+.section_experiencia {
+    width: 100%;
+    height: 90vh;
+    margin-top: 20vh;
+}
+
+.container_experiencia {
+    text-align: center;
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.titulo_experiencia {
+    color: var(--cor-seundaria);
+    font-size: var(--titulo);
+    text-shadow: 0px 0px 5px var(--orange-shadow);
+    margin-bottom: 6vh;
+}
+
+/* CSS para layout de cartões */
+/* CSS para layout de cartões com animação de zoom */
+.cartao_experiencia {
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    color: var(--white-color);
+    transition: transform 0.3s ease;
+}
+
+.cartao_experiencia:hover {
+    transform: scale(1.05);
+}
+
+
+.profissao {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.empresa {
+    font-size: 16px;
+    color: var(--cor-seundaria);
+    margin-bottom: 5px;
+}
+
+.data_profissao {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.descricao_profissao {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* FIM EXPERIENCIA  */
+
+/* INICIO IDIOMA  */
+
+.section_idioma {
+    width: 100%;
+    height: 60vh;
+    margin-top: 15vh;
+}
+
+.container_idioma {
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.titulo_idioma {
+    color: var(--cor-seundaria);
+    font-size: var(--titulo);
+    text-shadow: 0px 0px 5px var(--orange-shadow);
+    margin-bottom: 6vh;
+}
+
+.boxes_idioma {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.lingua {
+    color: var(--cor-seundaria);
+    font-size: var(--subtitulo);
+    margin-bottom: 1vh;
+}
+
+.nivel_lingua {
+    color: var(--white-color);
+    font-size: var(--texto);
+    margin-bottom: 1vh;
+}
+
+.intercambio {
+    color: var(--white-color);
+    font-size: 15px;
+    margin-bottom: 1vh;
+}
+
+
+
+/* FIM IDIOMA  */
+
+/* INICIO CHALLENGE  */
+
+.section_challenge {
+    width: 100%;
+    height: 60vh;
+    margin-top: 15vh;
+}
+
+.container_challenge {
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.titulo_challenge {
+    color: var(--cor-seundaria);
+    font-size: var(--titulo);
+    text-shadow: 0px 0px 5px var(--orange-shadow);
+    margin-bottom: 6vh;
+}
+
+.boxes_challenge {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_challenge{
+    width: 45%;
+}
+
+.descricao_challenge{
+    font-size: var(--texto);
+    line-height: 1.5;
+    color: var(--white-color);
+}
+
+.info_challenge{
+    margin-top: 5vh;
+    padding: 10px 56px;
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px var(--orange-shadow);
+}
+
+/* FIM CHALLENGE  */
+
+/* INICIO SKILSS  */
+.section_skills {
+    width: 100%;
+    padding: 4vh 0;
+    margin-top: 30vh;
+}
+
+.container_skills {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo_skills {
+    color: var(--cor-seundaria);
+    font-size: var(--titulo);
+    text-shadow: 0px 0px 5px var(--orange-shadow);
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
+.skills_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill_card {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--cor-primaria);
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill_card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px var(--cor-seundaria);
+}
+
+
+.logo_skill {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.skill_name {
+    font-size: var(--texto);
+    color: var(--white-color);
+}
+
+
+
+/* FIM SKILLS  */
+
+
+
