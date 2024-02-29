@@ -9,7 +9,3 @@ window.addEventListener('scroll', function() {
     }
 });
 
-function toggleMenu() {
-    var menuList = document.querySelector('.list_header');
-    menuList.classList.toggle('show');
-}
