@@ -48,21 +48,22 @@ header {
     transition: background-color 1.5s ease;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 1.5s ease;
+}
+
 header.scrolled {
     background-color: var(--cor-primaria);
 }
 
-.list_header {
-    display: none;
-}
-
 .menu-icon {
-    display: block;
-    color: var(--cor-seundaria);
-    font-size: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
+    display: none;
 }
 
 .container_header {
@@ -512,4 +513,124 @@ header.scrolled {
 /* FIM SKILLS  */
 
 
+@media only screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-primaria);
+        z-index: 1000;
+       
+    }
+
+    .menu_header {
+        flex-grow: 1;
+    }
+
+    .container_header {
+        display: flex;
+        justify-content: left;
+    }
+    
+    .menu_header {
+        display: flex;
+        justify-content: left;
+    }
+
+    .menu-icon {
+        display: block;
+        color: var(--cor-seundaria);
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .list_header {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--cor-primaria);
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 999;
+    }
+
+    .list_header.active {
+        display: flex;
+    }
+
+    .iten_header {
+        color: var(--white-color);
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    /* MAIN  */
+
+    .section_main {
+        margin-bottom: 50vh;
+    }
+
+    .container_main {
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .apresentacao_main {
+        width: 80%;
+        height: 60vh;
+        text-align: center; /* Centralizando o texto */
+        margin: 5vh;
+    }
+
+    .minha_ft_main {
+        width: 80%;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 100px 0px var(--cor-seundaria);
+    }
+
+    .links_main {
+        display: block;
+        margin: 5vh auto;
+        width: 70%;
+    }
+
+    .link_redes {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    /* CHALLENGE  */
+
+    .container_challenge {
+        width: 90%; /* Reduzindo a largura para melhorar a visualização em telas menores */
+    }
+
+    .boxes_challenge {
+        flex-direction: column; /* Mudando para layout de coluna */
+        align-items: center; /* Centralizando os itens */
+    }
+
+    .box_challenge {
+        width: 100%;
+        margin-bottom: 20px; /* Espaço entre as caixas */
+    }
+
+    .video {
+        width: 100%; /* Ajustando a largura do vídeo para preencher a caixa */
+        height: 30vh; /* Altura automática proporcional ao vídeo */
+    }
+
+    .info_challenge {
+        width: 100%; /* Ajustando a largura dos links */
+    }
+
+}
 

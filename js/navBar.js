@@ -9,3 +9,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const menuList = document.querySelector('.list_header');
+
+    menuIcon.addEventListener('click', function() {
+        menuList.classList.toggle('active');
+    });
+});
