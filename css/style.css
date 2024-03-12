@@ -508,12 +508,21 @@ header.scrolled {
     color: var(--white-color);
 }
 
+.footer{
+    margin-top: 10vw;
+}
+
+.copy{
+    text-align: center;
+    color: var(--gray-color);
+}
+
 
 
 /* FIM SKILLS  */
 
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 500px) {
     header {
         position: fixed;
         top: 0;
@@ -686,3 +695,178 @@ header.scrolled {
     }
 
 }
+
+@media only screen and (max-width: 1024px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-primaria);
+        z-index: 1000;
+
+    }
+
+    .menu_header {
+        flex-grow: 1;
+    }
+
+    .container_header {
+        display: flex;
+        justify-content: left;
+    }
+
+    .menu_header {
+        display: flex;
+        justify-content: left;
+    }
+
+    .menu-icon {
+        display: block;
+        color: var(--cor-seundaria);
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .list_header {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--cor-primaria);
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 999;
+    }
+
+    .list_header.active {
+        display: flex;
+    }
+
+    .iten_header {
+        color: var(--white-color);
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    /* MAIN  */
+
+    .section_main {
+        margin-bottom: 50vh;
+    }
+
+    .container_main {
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .apresentacao_main {
+        width: 80%;
+        height: 60vh;
+        text-align: center;
+        /* Centralizando o texto */
+        margin: 5vh;
+    }
+
+    .minha_ft_main {
+        width: 80%;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 100px 0px var(--cor-seundaria);
+    }
+
+    .links_main {
+        display: block;
+        margin: 5vh auto;
+        width: 70%;
+    }
+
+    .link_redes {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    /* IDIOMA  */
+
+    .titulo_idioma {
+        color: var(--cor-seundaria);
+        font-size: var(--titulo);
+        text-shadow: 0px 0px 5px var(--orange-shadow);
+        margin-bottom: 6vh;
+        text-align: center;
+    }
+
+    .boxes_idioma {
+        display: block;
+        width: 60%;
+        justify-content: space-between;
+        text-align: center;
+        margin: 15vh auto;
+    }
+
+    .box_idioma {
+        margin-bottom: 50px;
+    }
+
+    .lingua {
+        color: var(--cor-seundaria);
+        font-size: var(--subtitulo);
+        margin-bottom: 1vh;
+    }
+
+    .nivel_lingua {
+        color: var(--white-color);
+        font-size: var(--texto);
+        margin-bottom: 1vh;
+    }
+
+    .intercambio {
+        color: var(--white-color);
+        font-size: 15px;
+        margin-bottom: 1vh;
+    }
+
+    /* CHALLENGE  */
+
+    .titulo_challenge {
+        text-align: center;
+    }
+
+    .boxes_challenge {
+        display: block;
+        justify-content: center;
+    }
+
+    .box_challenge {
+       width: 100%;
+       margin-bottom: 15vh;
+    }
+
+    .descricao_challenge {
+        font-size: var(--texto);
+        line-height: 1.5;
+        color: var(--white-color);
+        text-align: center;
+    }
+
+    .info_challenge {
+        margin-top: 5vh;
+        padding: 10px 56px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video {
+        width: 100%;
+        height: 40vw;
+        border-radius: 30px;
+        box-shadow: 0px 0px 50px var(--orange-shadow);
+    }
+
+}
+
