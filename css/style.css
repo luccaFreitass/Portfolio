@@ -458,7 +458,7 @@ header.scrolled {
 .section_skills {
     width: 100%;
     padding: 4vh 0;
-    margin-top: 30vh;
+    margin-top: 40vh;
 }
 
 .container_skills {
@@ -581,20 +581,20 @@ header.scrolled {
     /* MAIN  */
 
     .section_main {
-        margin-bottom: 50vh;
+        height: 120vh;
     }
 
     .container_main {
         flex-direction: column;
         align-items: center;
         height: 100vh;
+        margin-bottom: 23vh;
     }
 
     .apresentacao_main {
         width: 80%;
         height: 60vh;
         text-align: center;
-        /* Centralizando o texto */
         margin: 5vh;
     }
 
@@ -606,13 +606,7 @@ header.scrolled {
 
     .links_main {
         display: block;
-        margin: 5vh auto;
         width: 70%;
-    }
-
-    .link_redes {
-        margin: 10px 0;
-        justify-content: center;
     }
 
     /* IDIOMA  */
