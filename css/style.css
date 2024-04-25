@@ -216,11 +216,10 @@ header.scrolled {
 }
 
 .links_main {
-    margin-top: 10vw;
+    margin-top: 10rem;
     display: flex;
     width: 100%;
     justify-content: center;
-
 }
 
 .link_redes {
@@ -296,6 +295,7 @@ header.scrolled {
     width: 80%;
     height: 40vh;
     margin: 0 auto;
+    padding: 7vh;
 }
 
 .titulo_formacao {
@@ -324,7 +324,7 @@ header.scrolled {
 }
 
 .info_curso {
-    padding: 10px 56px;
+    padding: 10px 30px;
     align-items: center;
     justify-content: center;
 }
@@ -649,12 +649,25 @@ header.scrolled {
         width: 70%;
     }
 
+    /* FORMACAO  */
+
+    .container_formacao {
+        width: 70%;
+        height: auto;
+        padding: 5vh;
+    }
+
     /* IDIOMA  */
 
+    .section_idioma{
+        margin-top: 20em;
+    }
+
+    .container_idioma{
+        height: auto;
+    }
+
     .titulo_idioma {
-        color: var(--cor-seundaria);
-        font-size: var(--titulo);
-        text-shadow: 0px 0px 5px var(--orange-shadow);
         margin-bottom: 6vh;
         text-align: center;
     }
@@ -864,6 +877,10 @@ header.scrolled {
     }
 
     /* CHALLENGE  */
+
+    .section_challenge{
+        margin-bottom: 20rem;
+    }
 
     .titulo_challenge {
         text-align: center;
