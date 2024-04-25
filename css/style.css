@@ -610,6 +610,7 @@ header.scrolled {
 
     .list_header.active {
         display: flex;
+        width: 100%;
     }
 
     .iten_header {
@@ -790,6 +791,7 @@ header.scrolled {
     }
 
     .list_header.active {
+        width: 100%;
         display: flex;
     }
 
