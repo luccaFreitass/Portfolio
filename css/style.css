@@ -188,7 +188,13 @@ header.scrolled {
     object-position: 60% 25%;
     border-radius: 100%;
     box-shadow: 0px 0px 150px 0px var(--cor-seundaria);
-    transition: 2s;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Efeito de Zoom */
+.minha_ft_main:hover {
+    transform: scale(1.1); /* Aumenta 10% o tamanho */
+    box-shadow: 0px 0px 200px 10px var(--cor-seundaria); /* Aumenta o efeito de sombra */
 }
 
 .minha_ft_main:hover {
