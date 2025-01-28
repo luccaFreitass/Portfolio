@@ -141,34 +141,68 @@
             </div>
         </section>
 
-        <!-- CHALLENGE  -->
+        <!-- CHALLENGE -->
+<section class="section_challenge" id="challenge">
+    <div class="container_challenge">
+        <h2 class="titulo_challenge">Projetos</h2>
+        <div class="carousel">
+            <!-- Botão de Navegação Esquerdo -->
+            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
 
-        <section class="section_challenge" id="challenge">
-            <div class="container_challenge">
-                <h2 class="titulo_challenge">Projeto para KraftHeinz</h2>
-                <div class="boxes_challenge">
-                    <div class="box_challenge">
-                        <p class="descricao_challenge">
-                            Este projeto visa fornecer à KraftHeinz uma ferramenta que permita a análise e apresentação
-                            das
-                            avaliações de seus produtos de forma eficiente e organizada.
-                        </p>
-                        <a class="link_redes info_challenge"
-                            href="https://github.com/luccaFreitass/KraftHeinz-ChallengeFiap" target="_blank"
-                            rel="noopener noreferrer">
-                            <p>Projeto no GitHub</p>
-                        </a>
+            <!-- Slides -->
+            <div class="carousel-track">
+                <!-- Slide 1 -->
+                <div class="carousel-item">
+                    <div class="boxes_challenge">
+                        <div class="box_challenge">
+                            <p class="descricao_challenge">
+                                <span class="texto_destaque">Projeto Campeão NEXT 2024 </span> <br> Desenvolvemos uma solução inovadora para a Eurofarma, focada em resolver desafios relacionados ao aprendizado em treinamentos corporativos. A proposta combina gamificação e inteligência artificial para tornar o aprendizado mais dinâmico, engajador e eficiente, promovendo resultados mais efetivos e alinhados às necessidades da empresa.
+                            </p>
+                            <a class="link_redes info_challenge"
+                                href="https://github.com/luccaFreitass/KraftHeinz-ChallengeFiap" target="_blank"
+                                rel="noopener noreferrer">
+                                <p>Projeto no GitHub</p>
+                            </a>
+                        </div>
+                        <div class="box_challenge">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vca6b4M7Pvw?si=4WdtHzDvxGRVkywH"
+                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
-                    <div class="box_challenge">
-                        <iframe class="video" width="560" height="315"
-                            src="https://www.youtube.com/embed/OQRMKTavShU?si=sIWhUIvlZS2BQbDF"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="boxes_challenge">
+                        <div class="box_challenge">
+                            <p class="descricao_challenge">
+                                Este projeto visa fornecer à KraftHeinz uma ferramenta que permita a análise e apresentação
+                                das avaliações de seus produtos de forma eficiente e organizada.
+                            </p>
+                            <a class="link_redes info_challenge"
+                                href="https://github.com/luccaFreitass/Outro-Projeto" target="_blank"
+                                rel="noopener noreferrer">
+                                <p>Outro Projeto no GitHub</p>
+                            </a>
+                        </div>
+                        <div class="box_challenge">
+                            <iframe class="video" width="560" height="315"
+                                src="https://www.youtube.com/embed/OQRMKTavShU?si=sIWhUIvlZS2BQbDF"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Botão de Navegação Direito -->
+            <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+</section>
+
 
         <!-- SKILLS  -->
         <section class="section_skills" id="skills">
@@ -218,6 +252,7 @@
     </footer>
     <script src="./js/loader.js"></script>
     <script src="./js/navBar.js"></script>
+    <script src="./js/carousel.js"></script>
 
 </body>
 
